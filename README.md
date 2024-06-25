@@ -41,7 +41,7 @@ int main() {
 
     return 0;
 }
-//Задача4.
+//Задача3.
 #include <iostream>
 #include <cmath> // Для использования sqrt()
 
