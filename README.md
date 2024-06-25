@@ -63,4 +63,27 @@ int main() {
     cout << "Среднее квадратичное чисел " << num1 << ", " << num2 << " и " << num3 << " равно: " << avg_sqrt << endl;
 
     return 0;
+} 
+
+//Задача4.
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Заданные данные
+    double retailPrice = 180.0; // розничная цена
+    double markupPercent = 20.0; // процент наценки
+
+    // Вычисление оптовой цены
+    double wholesalePrice = retailPrice / (1 + markupPercent / 100.0);
+
+    // Определение максимального числа учебников, которые можно купить на 10000 рублей
+    double totalMoney = 10000.0;
+    int maxBooks = static_cast<int>(totalMoney / wholesalePrice);
+
+    // Вывод результата
+    cout << "Оптовая цена учебника: " << wholesalePrice << " рублей" << endl;
+    cout << "Наибольшее число учебников, которое можно купить за 10000 рублей: " << maxBooks << endl;
+
+    return 0;
 }
