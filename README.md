@@ -41,3 +41,26 @@ int main() {
 
     return 0;
 }
+//Задача4.
+#include <iostream>
+#include <cmath> // Для использования sqrt()
+
+using namespace std;
+
+double averageSquareRoot(int a, int b, int c) {
+    // Вычисляем среднее квадратичное
+    double avg_sqrt = sqrt((pow(a, 2) + pow(b, 2) + pow(c, 2)) / 3.0);
+    return avg_sqrt;
+}
+
+int main() {
+    int num1 = 2, num2 = 11, num3 = 5;
+
+    // Вычисляем среднее квадратичное чисел 2, 11 и 5
+    double avg_sqrt = averageSquareRoot(num1, num2, num3);
+
+    // Вывод результата
+    cout << "Среднее квадратичное чисел " << num1 << ", " << num2 << " и " << num3 << " равно: " << avg_sqrt << endl;
+
+    return 0;
+}
